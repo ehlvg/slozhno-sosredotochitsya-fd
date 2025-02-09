@@ -2,3 +2,82 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --bg-color: #fff1f7;
+  --text-accent: #ff8dcb;
+  --text: #353430;
+  --focus: #ffc2e6;
+  --font: "IBM Plex mono", monospace;
+  --font-size: 18px;
+  --cover-image: url("../images/cover-image-light.png");
+  --header-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
+
+:root.theme-dark {
+  --bg-color: #000028;
+  --text-accent: #ff0070;
+  --text: #f1b2ce;
+  --focus: #db00ff;
+  --font: "IBM Plex mono", monospace;
+  --font-size: 18px;
+  --cover-image: url("../images/cover-image-dark.png");
+  --header-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
+
+@media (prefers-color-scheme: light) {
+  :root.theme-auto {
+    --bg-color: #fff1f7;
+    --text-accent: #ff8dcb;
+    --text: #353430;
+    --focus: #ffc2e6;
+    --font: "IBM Plex mono", monospace;
+    --font-size: 18px;
+    --cover-image: url("../images/cover-image-light.png");
+    --header-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .theme-auto .header__theme-menu-list {
+    color: var(--text);
+    margin-inline-start: -25px;
+  }
+
+  .theme-auto .header__theme-menu-button_active {
+    border: 1px solid var(--text);
+  }
+
+  .theme-auto .decorated-zone::after,
+  .theme-auto .decorated-zone::before {
+    color: var(--text);
+    border-color: var(--text) !important;
+  }
+
+  .theme-auto .header__rec {
+    display: none;
+  }
+
+  .theme-auto .title-decor {
+    color: var(--text);
+  }
+
+  .theme-auto .section-title {
+    color: var(--text);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root.theme-auto {
+    --bg-color: #000028;
+    --text-accent: #ff0070;
+    --text: #f1b2ce;
+    --focus: #db00ff;
+    --font: "IBM Plex mono", monospace;
+    --font-size: 18px;
+    --cover-image: url("../images/cover-image-dark.png");
+    --header-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .theme-auto .title-decor.section-title {
+    color: var(--bg-color);
+  }
+}

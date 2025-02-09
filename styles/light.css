@@ -13,4 +13,33 @@
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
+  background-color: var(--bg-color);
+  color: var(--text);
+}
+
+.theme-light .header__theme-menu-list {
+  color: var(--text);
+  margin-inline-start: -25px;
+}
+
+.theme-light .header__theme-menu-button_active {
+  border: 1px solid var(--text);
+}
+
+.theme-light .decorated-zone::after,
+.theme-light .decorated-zone::before {
+  color: var(--text);
+  border-color: var(--text);
+}
+
+.theme-light .header__rec {
+  display: none;
+}
+
+.theme-light .title-decor {
+  color: var(--text);
+}
+
+.theme-light .section-title {
+  color: var(--text);
 }
