@@ -43,3 +43,12 @@
 .theme-light .section-title {
   color: var(--text);
 }
+
+.theme-light .header__theme-menu-button:hover {
+  border: 1px solid rgba(var(--text-rgb), 0.5);
+}
+
+.theme-light .header__theme-menu-button:focus {
+  outline: none;
+  border-bottom: 1px solid var(--text);
+}
