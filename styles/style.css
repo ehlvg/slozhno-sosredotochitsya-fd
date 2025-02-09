@@ -116,7 +116,8 @@
   margin: 55px 0 0;
   gap: 20px;
   display: grid;
-  grid-template-columns: 315px 650px;
+  /* grid-template-columns: 315px 650px; */
+  grid-template-columns: 1fr 2fr;
 }
 
 .section-title {
@@ -165,7 +166,8 @@
   margin: 80px 0 0;
   gap: 20px;
   display: grid;
-  grid-template-columns: 315px 650px;
+  /* grid-template-columns: 315px 650px; */
+  grid-template-columns: 1fr 2fr;
 }
 
 .section-subtitle-light {
@@ -187,7 +189,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  grid-template-rows: 260px 315px 433px;
+  grid-template-rows: 2fr 3fr 5fr;
 }
 
 .pictures {
@@ -245,4 +247,135 @@
 
 .header__theme-menu-button {
   text-transform: lowercase;
+}
+
+@media (width <= 768px) {
+  .pochemu-section {
+    /* grid-template-columns: 1fr 2fr; */
+    margin: 85px 0 0;
+  }
+
+  .header__subtitle {
+    grid-column: 4 / 9;
+    margin-inline-start: -5px;
+  }
+
+  .header__title {
+    padding-block-end: 36px;
+  }
+
+  .header__theme-menu {
+    grid-column: 8;
+    grid-row: 2;
+    align-self: center;
+    padding-block-end: 190px;
+  }
+
+  .header__rec {
+    grid-column: 8;
+    padding-inline-start: 36px;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: column;
+  }
+
+  .snizhaet-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .snizhaet {
+    margin-block-start: 78px;
+  }
+
+  .concentration {
+    margin-block-start: 78px;
+    /* grid-template-columns: 1fr 2fr; */
+  }
+
+  .gallery {
+    max-height: 780px;
+    /* grid-template-rows: 2fr 3fr 5fr; */
+  }
+
+  .pictures {
+    margin-block-start: 78px;
+  }
+
+  .footer {
+    margin-block-start: 75px;
+  }
+}
+
+@media (width <= 600px) {
+  .header__title {
+    line-height: 85%;
+    align-self: start;
+    margin-block-start: -130px;
+    margin-block-end: 12px;
+  }
+
+  .header__subtitle {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__rec {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+  }
+
+  .header__theme-menu {
+    align-self: end;
+    margin-block-start: 68px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .pochemu-section {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 40px;
+    padding: 0 10px;
+  }
+
+  .snizhaet {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin-block-start: 50px;
+  }
+
+  .max-title-width {
+    max-width: 100%;
+  }
+
+  .concentration {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 45px;
+  }
+
+  .pictures {
+    padding: 0 10px;
+    margin-block-start: 50px;
+    max-height: initial;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    max-height: initial;
+  }
+
+  .footer {
+    margin-block-start: -10px;
+  }
 }
