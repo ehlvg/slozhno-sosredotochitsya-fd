@@ -1,0 +1,29 @@
+.footer {
+  margin-block-start: 60px;
+  position: relative;
+  min-height: 668px;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-title {
+  color: var(--focus);
+  font-size: var(--header-size);
+  text-shadow: 2px 2px 0 var(--text-accent);
+  padding-block-end: 50px;
+}
+
+@media (width <= 768px) {
+  .footer-title {
+    padding-block-end: initial;
+  }
+}
+
+@media (width <= 600px) {
+  .footer {
+    margin-block-start: 40px;
+  }
+}

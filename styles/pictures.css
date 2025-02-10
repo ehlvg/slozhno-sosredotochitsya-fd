@@ -1,0 +1,56 @@
+.pictures {
+  margin-block-start: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.pictures img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sunset {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.ice-cream {
+  grid-row: 1 / 3;
+}
+
+.tape {
+  grid-column: 1;
+  grid-row: 2 / 4;
+}
+
+.street {
+  grid-column: 2 / 4;
+}
+
+.books {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (width <= 600px) {
+  .gallery {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .pictures {
+    margin-block-start: 30px;
+    padding: 0 10px;
+    gap: 10px;
+  }
+}

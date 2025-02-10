@@ -1,22 +1,16 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-}
-
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  background-color: var(--bg-color);
-  color: var(--text);
-}
-
-.theme-dark .title-decor.section-title {
-  color: var(--bg-color);
+  --bg-color: #000028;
+  --text-accent: #ff0070;
+  --text-accent-rgb: 255, 0, 112;
+  --text: #f1b2ce;
+  --focus: #db00ff;
+  --font: "IBM Plex mono", monospace;
+  --font-size: 18px;
+  --cover-image: url("../images/cover-image-dark.png");
+  --button-hover-opacity: 0.5;
+  --show-rec: flex;
+  --section-title: var(--bg-color);
+  --corners-menu-color: var(--text-accent);
+  --menu-hover-color: rgba(var(--text-accent-rgb), 0.5);
+  --decor-text-color: var(--bg-color);
 }

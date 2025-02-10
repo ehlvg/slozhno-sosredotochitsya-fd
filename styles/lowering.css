@@ -1,0 +1,38 @@
+.lowering {
+  margin-block-start: 57px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.lowering-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.max-title-width {
+  max-width: 33%;
+}
+
+@media (width <= 768px) {
+  .lowering-list {
+    grid-template-columns: 1fr;
+  }
+
+  .max-title-width {
+    max-width: 29%;
+  }
+}
+
+@media (width <= 600px) {
+  .lowering {
+    margin-block-start: 30px;
+    padding: 0 10px;
+  }
+
+  .max-title-width {
+    max-width: initial;
+  }
+}

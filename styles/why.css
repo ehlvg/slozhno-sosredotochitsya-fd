@@ -1,0 +1,21 @@
+.why-section {
+  display: grid;
+  grid-template-columns: 0.92fr 1.9fr;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+@media (width <= 768px) {
+  .why-section {
+    margin-block-start: 60px;
+    grid-template-columns: 0.94fr 1.9fr;
+  }
+}
+
+@media (width <= 600px) {
+  .why-section {
+    margin-block-start: 40px;
+    padding: 0 10px;
+    grid-template-columns: 1fr;
+  }
+}

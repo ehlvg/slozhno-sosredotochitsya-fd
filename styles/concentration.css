@@ -1,0 +1,36 @@
+.concentration {
+  margin-block-start: 80px;
+  display: grid;
+  grid-template-columns: 0.92fr 1.9fr;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.section-subtitle-light {
+  font-weight: 400;
+  font-size: 18px;
+  margin-block-end: 10px;
+}
+
+html .concentration-subtitle {
+  margin-block-end: 20px;
+}
+
+.concentration-article {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (width <= 768px) {
+  .concentration {
+    grid-template-columns: 0.94fr 1.9fr;
+  }
+}
+
+@media (width <= 600px) {
+  .concentration {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+    margin-block-start: 50px;
+  }
+}
