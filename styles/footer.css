@@ -16,7 +16,7 @@
   padding-block-end: 50px;
 }
 
-@media (768px < width <= 1024px) {
+@media (width <= 1024px) {
   .footer-title {
     padding-block-end: initial;
   }

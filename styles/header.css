@@ -125,6 +125,7 @@
   }
 
   .header__title {
+    padding-block-end: 12px;
     grid-column: 1;
     grid-row: 3;
     line-height: 90%;
