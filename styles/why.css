@@ -5,9 +5,14 @@
   padding: 0 20px;
 }
 
-@media (width <= 768px) {
+@media (768px < width <= 1024px) {
   .why-section {
     margin-block-start: 60px;
+  }
+}
+
+@media (width <= 768px) {
+  .why-section {
     grid-template-columns: 0.94fr 1.9fr;
   }
 }

@@ -82,6 +82,17 @@
   padding-block-end: 98px;
 }
 
+@media (768px < width <= 1024px) {
+  .header {
+    grid-template-rows: min-content 1.25fr 0.8fr;
+  }
+
+  .header__subtitle {
+    align-self: end;
+    margin-block-end: 20px;
+  }
+}
+
 @media (width <= 768px) {
   .header__theme-menu {
     grid-column: 5 / 6;
