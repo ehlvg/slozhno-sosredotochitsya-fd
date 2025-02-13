@@ -9,7 +9,7 @@
   --cover-image: url("../images/cover-image-dark.png");
   --button-hover-opacity: 0.5;
   --show-rec: flex;
-  --section-title: var(--bg-color);
+  --section-title: var(--text-accent);
   --corners-menu-color: var(--text-accent);
   --menu-hover-color: rgba(var(--text-accent-rgb), 0.5);
   --decor-text-color: var(--bg-color);

@@ -31,7 +31,7 @@
 }
 
 .link:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid currentcolor;
 }
 
 .link:focus {
@@ -68,10 +68,19 @@
   margin: 0;
 }
 
+.section-title {
+  color: var(--section-title);
+}
+
 .section-subtitle {
   margin-block-end: 10px;
 }
 
 main {
   line-height: 23.4px;
+}
+
+.article-section p:not(:last-child),
+.lowering-list p:not(:last-child) {
+  margin-block-end: 10px;
 }
